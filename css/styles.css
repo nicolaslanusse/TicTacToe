@@ -53,3 +53,32 @@ body {
     width: 75%
 }
 
+.box-select-mode {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.select-mode {
+    width: 75%;
+    background-color: burlywood;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boy-img, .girl-img, .robot-img {
+    max-width: 50px;
+}
+
+.mode1vs1, .mode1vscpu {
+    display: flex;
+    justify-content: center;
+}
+
+.mode-text {
+    margin-left:10px;
+    margin-right: 10px;
+}
