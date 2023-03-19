@@ -25,10 +25,18 @@ body {
 
 #button-playnow {
     background-color: blanchedalmond;
-    border-radius: 20px;
     padding: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     letter-spacing: 2px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    transition: .4s ease-in-out;
+}
+
+#button-playnow:hover {
+    cursor: pointer;
+    border-color: black;
+    background-color: rgb(249, 198, 120);
 }
 
 .title-about-game, .title-game-instructions {
@@ -57,6 +65,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .select-mode {
@@ -84,7 +93,7 @@ body {
     padding: 10px;
     border: 3px solid transparent;
     border-radius: 20px;
-    transition: .4s ease-in-out;
+    transition: .4s;
 }
 
 .mode1vs1:hover, .mode1vscpu:hover {
@@ -102,4 +111,17 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+}
+
+#board {
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box-board {
+    background-color: burlywood;
 }
