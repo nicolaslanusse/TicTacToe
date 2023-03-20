@@ -33,6 +33,10 @@ body {
     transition: .4s ease-in-out;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #button-playnow:hover {
     cursor: pointer;
     border-color: black;
