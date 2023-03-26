@@ -23,7 +23,7 @@ body {
     width: 75%;
 }
 
-#button-playnow {
+#button-playnow, #startGame, .btnPlayAgain {
     background-color: blanchedalmond;
     padding: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -37,7 +37,7 @@ a:link {
     text-decoration: none;
 }
 
-#button-playnow:hover {
+#button-playnow:hover, #startGame:hover {
     cursor: pointer;
     border-color: black;
     background-color: rgb(249, 198, 120);
@@ -128,4 +128,82 @@ a:link {
 
 .box-board {
     background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+
+.box-names {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box-inputs-names {
+    background-color: burlywood;
+    border-radius: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.boton-start {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#namePlayer1, #namePlayer2 {
+    border-radius: 20px;
+    height: 20px;
+    width: 150px;
+}
+
+.input-names {
+    text-align: center;
+}
+
+.showNames {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: burlywood;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 75%;
+}
+
+.box-show-winner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winnersText {
+    width: 75%;
+    background-color: burlywood;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+    padding-bottom: 20px;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    #board {
+        grid-template-columns: 110px 110px 110px;
+        grid-template-rows: 110px 110px 110px;
+    }
 }
