@@ -1,47 +1,19 @@
-# Project Title
+# Tic Tac Toe 🎮
 
-## Table of Contents
+## About the project 🔍
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+I designed this tic tac toe as a project of GeeksHubs Academy, it is based on three pages: the main page, the part to select the mode, the game, and the final part that shows the winner.
 
-## About <a name = "about"></a>
+## Getting Started 💻
 
-Write about 1-2 paragraphs describing the purpose of your project.
+You can enter the website and see everything on your own. [Enter here.](https://nicolaslanusse.github.io/TicTacToe/)
 
-## Getting Started <a name = "getting_started"></a>
+## Built with ⚒️
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. for notes on how to deploy the project on a live system.
-<a href="https://nicolaslanusse.github.io/TicTacToe/">See the demo here.</a>
+![Captura](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Captura](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Captura](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Prerequisites
+## Preview 👀
 
-What things you need to install the software and how to install them.
+Here you can see some screenshots of what the project is about
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
+<img src="images/mobile.png"></img>
