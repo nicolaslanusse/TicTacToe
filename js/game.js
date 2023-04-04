@@ -61,9 +61,10 @@ const gameFunction = () => {
       }
       turno1 = !turno1;
       checkWinner(mapCasillas[element.id], mapCasillas);
+      volverInicio();
     }
   };
-  
+
   for (let i = 0; i < htmlCasillas.length; i++) {
     htmlCasillas[i].addEventListener("click", (event) => {
       const element = event.target;
@@ -73,40 +74,53 @@ const gameFunction = () => {
   }
 };
 
-const checkWinner = (player, mapC) => {
-  const uiRenderWinner = () => {
-    if (player == "x") {
-      root.innerHTML = renderWinner(game.player2.name);
-    } else {
-      root.innerHTML = renderWinner(game.player1.name);
-    }
-  };
+// const checkWinner = (player, mapC) => {
+//   const uiRenderWinner = () => {
+//     if (player == "x") {
+//       root.innerHTML = renderWinner(game.player2.name);
+//     } else {
+//       root.innerHTML = renderWinner(game.player1.name);
+//     }
+//   };
 
-  if (mapC[0] == player && mapC[1] == player && mapC[2] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[3] == player && mapC[4] == player && mapC[5] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[6] == player && mapC[7] == player && mapC[8] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[0] == player && mapC[3] == player && mapC[6] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[1] == player && mapC[4] == player && mapC[7] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[2] == player && mapC[5] == player && mapC[8] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[0] == player && mapC[4] == player && mapC[8] == player) {
-    uiRenderWinner();
-  }
-  if (mapC[2] == player && mapC[4] == player && mapC[6] == player) {
-    uiRenderWinner();
-  }
-};
+//   if (mapC[0] == player && mapC[1] == player && mapC[2] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[3] == player && mapC[4] == player && mapC[5] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[6] == player && mapC[7] == player && mapC[8] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[0] == player && mapC[3] == player && mapC[6] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[1] == player && mapC[4] == player && mapC[7] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[2] == player && mapC[5] == player && mapC[8] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[0] == player && mapC[4] == player && mapC[8] == player) {
+//     uiRenderWinner();
+//   }
+//   if (mapC[2] == player && mapC[4] == player && mapC[6] == player) {
+//     uiRenderWinner();
+//   }
+//   if (
+//     mapC[0] != undefined &&
+//     mapC[1] != undefined &&
+//     mapC[2] != undefined &&
+//     mapC[3] != undefined &&
+//     mapC[4] != undefined &&
+//     mapC[5] != undefined &&
+//     mapC[6] != undefined &&
+//     mapC[7] != undefined &&
+//     mapC[8] != undefined
+//   ) {
+//     root.innerHTML = uiRenderEmpate();
+//   }
+// };
 
 const uiBoard = () => {
   const btnStart = document.getElementById("startGame");
