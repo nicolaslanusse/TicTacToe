@@ -23,7 +23,7 @@ body {
     width: 75%;
 }
 
-#button-playnow, #startGame, .btnPlayAgain {
+#button-playnow, #startGame, #btnPlayAgain, #btnPlayAgainEmpate {
     background-color: blanchedalmond;
     padding: 8px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -199,6 +199,13 @@ a:link {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.playAgainBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 @media (max-width: 600px) {
